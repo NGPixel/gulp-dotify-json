@@ -1,0 +1,37 @@
+{
+  "name": "gulp-dotify-json",
+  "version": "1.0.0",
+  "description": "Gulp plugin to transform json files into dot notation json files",
+  "main": "dotify.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NGPixel/gulp-dotify-json"
+  },
+  "author": {
+    "name": "Nicolas Giard",
+    "web": "http://ngpixel.com"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/NGPixel/gulp-dotify-json/issues"
+  },
+  "homepage": "https://github.com/NGPixel/gulp-dotify-json",
+  "dependencies": {
+    "gulp":"*"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "json",
+    "dot",
+    "notation",
+    "object",
+    "dotify"
+  ]
+}
