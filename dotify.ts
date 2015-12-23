@@ -1,4 +1,4 @@
-declare var require;
+declare var require, Buffer;
 
 var through = require('through2');
 var gutil = require('gulp-util');
@@ -43,7 +43,7 @@ export = function(options: any) {
 
     let original = require(file.path);
 
-    if(!original || typeof original === 'object') {
+    if(!original || typeof original !== 'object') {
       return callback(null, file);
     }
 
@@ -55,7 +55,7 @@ export = function(options: any) {
       return callback(null, file);
     }
 
-    file.contents = str;
+    file.contents = new Buffer(str);
     file.path = gutil.replaceExtension(file.path, '.json');
 
     return callback(null, file);

@@ -9,6 +9,7 @@
   },
   "author": {
     "name": "Nicolas Giard",
+    "email": "github@ngpixel.com",
     "web": "http://ngpixel.com"
   },
   "license": {
@@ -22,7 +23,8 @@
   },
   "homepage": "https://github.com/NGPixel/gulp-dotify-json",
   "dependencies": {
-    "gulp":"*"
+    "gulp": "^3.9.0",
+    "through2": "^2.0.0"
   },
   "devDependencies": {},
   "keywords": [

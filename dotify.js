@@ -30,7 +30,7 @@ module.exports = function (options) {
             return callback(null, file);
         }
         var original = require(file.path);
-        if (!original || typeof original === 'object') {
+        if (!original || typeof original !== 'object') {
             return callback(null, file);
         }
         var dotted = dotify(original);
@@ -41,7 +41,7 @@ module.exports = function (options) {
         catch (err) {
             return callback(null, file);
         }
-        file.contents = str;
+        file.contents = new Buffer(str);
         file.path = gutil.replaceExtension(file.path, '.json');
         return callback(null, file);
     }
