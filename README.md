@@ -1,4 +1,4 @@
-# gulp-dotify-json
+# gulp-dotify-json [![GitHub release](https://img.shields.io/github/release/ngpixel/gulp-dotify-json.svg?style=flat-square)](https://github.com/NGPixel/gulp-dotify-json/releases/tag/v1.0)
 
 > Gulp plugin to transform json files into dot notation json files
 
